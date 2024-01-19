@@ -1,0 +1,9 @@
+res://manualGun.tscn
+res://player.tscn
+res://game.tscn
+res://manualGun.gd
+res://autoGun.tscn
+res://bullet.tscn
+res://player.gd
+res://bullet.gd
+res://mob.gd

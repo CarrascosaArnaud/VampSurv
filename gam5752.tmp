@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://54n2ijfw2s2v"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_vdcsr"]
+[ext_resource type="PackedScene" uid="uid://b2pyp0c8s8hco" path="res://player.tscn" id="1_wdkue"]
+[ext_resource type="PackedScene" uid="uid://ibl1jubdl1an" path="res://map.tscn" id="2_fh3gm"]
+
+[sub_resource type="Curve2D" id="Curve2D_wy1s7"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -43.942, -81.7974, 0, 0, 0, 0, 2056, -70, 0, 0, 0, 0, 2044, 1153, 0, 0, 0, 0, -39.0264, 1157.92, 0, 0, 0, 0, -39.0264, -81.7974)
+}
+point_count = 5
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_vdcsr")
+
+[node name="Map" parent="." instance=ExtResource("2_fh3gm")]
+
+[node name="Player" parent="." instance=ExtResource("1_wdkue")]
+position = Vector2(983, 577)
+
+[node name="Path2D" type="Path2D" parent="Player"]
+position = Vector2(-1018.3, -575.798)
+scale = Vector2(1.01717, 1.01717)
+curve = SubResource("Curve2D_wy1s7")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-43.942, -81.7974)
+rotation = 0.00561792
+
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+
+[node name="GameOver" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOver"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.54902)
+
+[node name="Label" type="Label" parent="GameOver/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -11.5
+offset_right = 46.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 200
+text = "GAME OVER"
+
+[node name="StartOver" type="Button" parent="GameOver"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -325.0
+offset_right = 60.0
+offset_bottom = -201.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 100
+text = "Recommencer"
+
+[connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="GameOver/StartOver" to="." method="_on_start_over_pressed"]

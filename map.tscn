@@ -1,0 +1,122 @@
+[gd_scene load_steps=2 format=3 uid="uid://ibl1jubdl1an"]
+
+[ext_resource type="PackedScene" uid="uid://d01wiid7ug8gk" path="res://pine_tree.tscn" id="1_tprcr"]
+
+[node name="Map" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -30
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1962.0
+offset_bottom = 1106.0
+color = Color(0.0392157, 0.329412, 0.219608, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="PineTree" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(187, 540)
+
+[node name="PineTree8" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(-308, 513)
+
+[node name="PineTree2" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(520, 723)
+
+[node name="PineTree3" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(739, 254)
+
+[node name="PineTree4" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1226, 376)
+
+[node name="PineTree7" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(154, 978)
+
+[node name="PineTree9" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(562, 1278)
+
+[node name="PineTree5" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1474, 811)
+
+[node name="PineTree6" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1693, 342)
+
+[node name="PineTree10" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1417, -252)
+
+[node name="PineTree11" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(922, -279)
+
+[node name="PineTree12" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1750, -69)
+
+[node name="PineTree13" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1969, -538)
+
+[node name="PineTree14" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(2456, -416)
+
+[node name="PineTree15" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1384, 186)
+
+[node name="PineTree16" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1792, 486)
+
+[node name="PineTree17" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(2704, 19)
+
+[node name="PineTree18" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(2923, -450)
+
+[node name="PineTree19" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(-854, -21)
+
+[node name="PineTree20" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(-1349, -48)
+
+[node name="PineTree21" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(-521, 162)
+
+[node name="PineTree22" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(-302, -307)
+
+[node name="PineTree23" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(185, -185)
+
+[node name="PineTree24" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(-887, 417)
+
+[node name="PineTree25" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(-479, 717)
+
+[node name="PineTree26" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(433, 250)
+
+[node name="PineTree27" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(652, -219)
+
+[node name="PineTree28" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1159, 996)
+
+[node name="PineTree29" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(664, 969)
+
+[node name="PineTree30" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1492, 1179)
+
+[node name="PineTree31" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1711, 710)
+
+[node name="PineTree32" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(2198, 832)
+
+[node name="PineTree33" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1126, 1434)
+
+[node name="PineTree34" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(1534, 1734)
+
+[node name="PineTree35" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(2446, 1267)
+
+[node name="PineTree36" parent="." instance=ExtResource("1_tprcr")]
+position = Vector2(2665, 798)
