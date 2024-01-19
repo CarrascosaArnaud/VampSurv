@@ -75,13 +75,13 @@ Settings/Show_Tooltips=true
 [application]
 
 config/name="VampSurv"
-run/main_scene="res://game.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.png"
 
 [autoload]
 
-Pause="*res://pause.tscn"
+Pause="*res://scenes/pause.tscn"
 
 [display]
 

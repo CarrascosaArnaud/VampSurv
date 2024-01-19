@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://b2pyp0c8s8hco"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_7xvge"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_7xvge"]
 [ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_a4cad"]
-[ext_resource type="PackedScene" uid="uid://dgeokumduf3ek" path="res://autoGun.tscn" id="3_12j3x"]
-[ext_resource type="PackedScene" uid="uid://ftlvxrq1shr5" path="res://manualGun.tscn" id="4_1tdl3"]
+[ext_resource type="PackedScene" uid="uid://dgeokumduf3ek" path="res://scenes/autoGun.tscn" id="3_4uno5"]
+[ext_resource type="PackedScene" uid="uid://ftlvxrq1shr5" path="res://scenes/manualGun.tscn" id="4_1tdl3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38e18"]
 radius = 21.0
@@ -37,10 +37,12 @@ shape = SubResource("CapsuleShape2D_38e18")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="AutoGun" parent="." instance=ExtResource("3_12j3x")]
-position = Vector2(0, -53.95)
+[node name="AutoGun" parent="." instance=ExtResource("3_4uno5")]
+position = Vector2(81.235, -47.575)
 
 [node name="ManualGun" parent="." instance=ExtResource("4_1tdl3")]
+position = Vector2(3, -16)
+scale = Vector2(0.495, 0.495)
 
 [node name="HurtBox" type="Area2D" parent="."]
 unique_name_in_owner = true

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ibl1jubdl1an"]
 
-[ext_resource type="PackedScene" uid="uid://d01wiid7ug8gk" path="res://pine_tree.tscn" id="1_tprcr"]
+[ext_resource type="PackedScene" uid="uid://d01wiid7ug8gk" path="res://scenes/pine_tree.tscn" id="1_tprcr"]
 
 [node name="Map" type="Node2D"]
 
