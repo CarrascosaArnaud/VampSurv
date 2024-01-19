@@ -77,7 +77,10 @@ Settings/Show_Tooltips=true
 config/name="VampSurv"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.png"
+
+[audio]
+
+buses/default_bus_layout=""
 
 [autoload]
 

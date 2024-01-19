@@ -2,10 +2,6 @@ extends Node2D
 
 var score = 0
 
-func _ready():
-	spawn_mob()
-	spawn_mob()
-
 func spawn_mob():
 	var new_mob = preload("res://scenes/mob.tscn").instantiate()
 	%PathFollow2D.progress_ratio = randf()
