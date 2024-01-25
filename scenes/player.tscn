@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2pyp0c8s8hco"]
+[gd_scene load_steps=9 format=3 uid="uid://dpp1140due25a"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_7xvge"]
-[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_a4cad"]
+[ext_resource type="PackedScene" uid="uid://nrx5p4m6y3m4" path="res://scenes/goofyboi.tscn" id="2_ogrei"]
 [ext_resource type="PackedScene" uid="uid://dgeokumduf3ek" path="res://scenes/autoGun.tscn" id="3_4uno5"]
 [ext_resource type="PackedScene" uid="uid://ftlvxrq1shr5" path="res://scenes/manualGun.tscn" id="4_1tdl3"]
 
@@ -10,7 +10,7 @@ radius = 21.0
 height = 68.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uvnvo"]
-radius = 35.1283
+radius = 41.3725
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uu7m4"]
 bg_color = Color(0.158472, 0.158472, 0.158472, 1)
@@ -29,23 +29,28 @@ corner_radius_bottom_left = 8
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_7xvge")
 
-[node name="HappyBoo" parent="." instance=ExtResource("1_a4cad")]
+[node name="Goofyboi" parent="." instance=ExtResource("2_ogrei")]
+position = Vector2(0, -43.96)
+scale = Vector2(2.555, 2.555)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10.315)
 rotation = 1.5708
+scale = Vector2(0.885, 1.45)
 shape = SubResource("CapsuleShape2D_38e18")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="AutoGun" parent="." instance=ExtResource("3_4uno5")]
-position = Vector2(81.235, -47.575)
+position = Vector2(-26.225, 0)
 
 [node name="ManualGun" parent="." instance=ExtResource("4_1tdl3")]
-position = Vector2(3, -16)
-scale = Vector2(0.495, 0.495)
+position = Vector2(23.675, -11.61)
 
 [node name="HurtBox" type="Area2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(0, -12.275)
+scale = Vector2(1.37, 1.37)
 collision_layer = 0
 collision_mask = 2
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bew06lqa0utd5"]
 
 [ext_resource type="Script" path="res://scripts/mob.gd" id="1_yvdbr"]
-[ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="2_ae6t1"]
+[ext_resource type="PackedScene" uid="uid://cdwcfd15sinom" path="res://scenes/bouboule.tscn" id="3_a73va"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ks51k"]
 radius = 52.0384
@@ -11,9 +11,9 @@ collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_yvdbr")
 
-[node name="Slime" parent="." instance=ExtResource("2_ae6t1")]
-unique_name_in_owner = true
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -30)
 shape = SubResource("CircleShape2D_ks51k")
+
+[node name="Bouboule" parent="." instance=ExtResource("3_a73va")]
+unique_name_in_owner = true

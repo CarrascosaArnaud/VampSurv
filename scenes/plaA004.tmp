@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=3 uid="uid://dpp1140due25a"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_7xvge"]
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_a4cad"]
+[ext_resource type="PackedScene" uid="uid://nrx5p4m6y3m4" path="res://scenes/goofyboi.tscn" id="2_ogrei"]
+[ext_resource type="PackedScene" uid="uid://dgeokumduf3ek" path="res://scenes/autoGun.tscn" id="3_4uno5"]
+[ext_resource type="PackedScene" uid="uid://ftlvxrq1shr5" path="res://scenes/manualGun.tscn" id="4_1tdl3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38e18"]
+radius = 21.0
+height = 68.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uvnvo"]
+radius = 35.1283
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uu7m4"]
+bg_color = Color(0.158472, 0.158472, 0.158472, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fiku0"]
+bg_color = Color(0.388235, 0.8, 0.372549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_7xvge")
+
+[node name="Goofyboi" parent="." instance=ExtResource("2_ogrei")]
+position = Vector2(0, -43.96)
+scale = Vector2(2.555, 2.555)
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_a4cad")]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_38e18")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AutoGun" parent="." instance=ExtResource("3_4uno5")]
+position = Vector2(1.115, -99.485)
+
+[node name="ManualGun" parent="." instance=ExtResource("4_1tdl3")]
+position = Vector2(3, -16)
+scale = Vector2(0.495, 0.495)
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(0, -1)
+rotation = 1.5708
+shape = SubResource("CircleShape2D_uvnvo")
+debug_color = Color(0.913725, 0.223529, 0.490196, 0.419608)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = -75.0
+offset_top = -125.0
+offset_right = 75.0
+offset_bottom = -98.0
+theme_override_styles/background = SubResource("StyleBoxFlat_uu7m4")
+theme_override_styles/fill = SubResource("StyleBoxFlat_fiku0")
+value = 100.0
+show_percentage = false

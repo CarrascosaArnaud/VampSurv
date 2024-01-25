@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ftlvxrq1shr5"]
 
 [ext_resource type="Script" path="res://scripts/manualGun.gd" id="1_t7ldv"]
-[ext_resource type="Texture2D" uid="uid://cswb5do8rrj7q" path="res://pistol/pistol.png" id="2_u2rd4"]
+[ext_resource type="Texture2D" uid="uid://ceacms82c0ha3" path="res://assets/gun.png" id="2_onba1"]
 
 [node name="ManualGun" type="Area2D"]
 collision_layer = 0
@@ -12,9 +12,8 @@ script = ExtResource("1_t7ldv")
 
 [node name="Pistol" type="Sprite2D" parent="WeaponPivot"]
 modulate = Color(0.835294, 0.0941176, 0.0588235, 1)
-position = Vector2(10, -18)
-scale = Vector2(1.415, 1.415)
-texture = ExtResource("2_u2rd4")
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("2_onba1")
 
 [node name="ShootingPoint" type="Marker2D" parent="WeaponPivot/Pistol"]
 unique_name_in_owner = true

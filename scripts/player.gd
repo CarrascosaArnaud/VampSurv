@@ -4,17 +4,32 @@ signal health_depleted
 
 var health = 0.0
 const SPEED = 1500
+const ACCELERATION = 150
+const FRIC = 400
+
+func accelerate(direction: Vector2):
+	velocity = velocity.move_toward(SPEED * direction, ACCELERATION)
+
+func apply_friction():
+	velocity = velocity.move_toward(Vector2.ZERO, FRIC)
 
 func _physics_process(delta):
 	var direction = Input.get_vector("move_left","move_right","move_up","move_down")
-	velocity = direction * SPEED
-	move_and_slide()
-	
-	if (velocity.length() > 0.0):
-		$HappyBoo.play_walk_animation() # %HappyBoo == get_node("HappyBoo") peu importe le chemin
+	if direction != Vector2.ZERO:
+		accelerate(direction) #velocity = direction * SPEED
+		move_and_slide()
+		if(velocity > Vector2(0.5,-0.5) || velocity > Vector2(-0.5,0.5)):
+			$Goofyboi.play_run_animation() 
+		else:
+			$Goofyboi.play_acceleration_animation()
 	else:
-		$HappyBoo.play_idle_animation()
-		
+		apply_friction()
+		$Goofyboi.play_idle_animation()
+	
+	#if (velocity.length() > 0.0):
+		#$Goofyboi.play_run_animation() # %HappyBoo == get_node("HappyBoo") peu importe le chemin
+	#elif(direction.x < SPEED):
+		#$Goofyboi.play_acceleration_animation()
 
 	const DAMAGE_RATE = 5.0
 	var overlapping_mobs = %HurtBox.get_overlapping_bodies()
@@ -24,3 +39,4 @@ func _physics_process(delta):
 		#%ProgressBar.max_value = health #pv max
 		if health <= 0.0:
 			health_depleted.emit()
+			AudioManager.player_death_sound.play()

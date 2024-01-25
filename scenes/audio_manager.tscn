@@ -1,0 +1,103 @@
+[gd_scene load_steps=28 format=3 uid="uid://8id1mjpd6mgs"]
+
+[ext_resource type="Script" path="res://scripts/audioManager.gd" id="1_md1gq"]
+[ext_resource type="AudioStream" uid="uid://dp2y8sk4q4mi5" path="res://audio/dead.wav" id="2_7oes7"]
+[ext_resource type="AudioStream" uid="uid://b0262x30t72wo" path="res://audio/kill.wav" id="2_87krv"]
+[ext_resource type="AudioStream" uid="uid://btb216ioip6yt" path="res://audio/kill2.wav" id="3_knw4k"]
+[ext_resource type="AudioStream" uid="uid://c7pg1bcflna7d" path="res://audio/kill3.wav" id="4_uw3qt"]
+[ext_resource type="AudioStream" uid="uid://cikqo1oll71tp" path="res://audio/kill4.wav" id="5_0opsc"]
+[ext_resource type="AudioStream" uid="uid://0hjl84p6cgho" path="res://audio/kill5.wav" id="6_yblex"]
+[ext_resource type="AudioStream" uid="uid://bsbgg5tv07bjn" path="res://audio/kill6.wav" id="7_slp6e"]
+[ext_resource type="AudioStream" uid="uid://jgb5ijpffa8a" path="res://audio/moonKidBO.mp3" id="8_tecvb"]
+[ext_resource type="AudioStream" uid="uid://dpqwsvqn31wpm" path="res://audio/laserShoot.wav" id="10_5llrb"]
+[ext_resource type="AudioStream" uid="uid://07tvmx18odl5" path="res://audio/laserShoot (1).wav" id="11_i782l"]
+[ext_resource type="AudioStream" uid="uid://cwcjfmlspof7h" path="res://audio/laserShoot (2).wav" id="12_553dt"]
+[ext_resource type="AudioStream" uid="uid://cysekchrmtir5" path="res://audio/laserShoot (3).wav" id="13_3i8ld"]
+[ext_resource type="AudioStream" uid="uid://d26h2q4m407a8" path="res://audio/laserShoot (4).wav" id="14_77vhm"]
+[ext_resource type="AudioStream" uid="uid://e4ubi36xukg3" path="res://audio/laserShoot (5).wav" id="15_651uv"]
+[ext_resource type="AudioStream" uid="uid://dquss7qye0mws" path="res://audio/laserShoot (6).wav" id="16_igt78"]
+[ext_resource type="AudioStream" uid="uid://m7iy7i6j5o5" path="res://audio/laserShoot (7).wav" id="17_k2dy7"]
+[ext_resource type="AudioStream" uid="uid://cguyoyedx8wbe" path="res://audio/laserShoot (8).wav" id="18_y1kgd"]
+[ext_resource type="AudioStream" uid="uid://cof3baj2n4cyr" path="res://audio/laserShoot (9).wav" id="19_c1t4v"]
+[ext_resource type="AudioStream" uid="uid://c4b2anu78m34f" path="res://audio/laserShoot (10).wav" id="20_k0p40"]
+[ext_resource type="AudioStream" uid="uid://b8uwo0jc8su3r" path="res://audio/laserShoot (11).wav" id="21_11h5k"]
+[ext_resource type="AudioStream" uid="uid://bqjdftnsc4vci" path="res://audio/laserShoot (12).wav" id="22_wcitd"]
+[ext_resource type="AudioStream" uid="uid://cdjcbo64j4uaa" path="res://audio/laserShoot (13).wav" id="23_n51c7"]
+[ext_resource type="AudioStream" uid="uid://bj18pmebvydky" path="res://audio/laserShoot (14).wav" id="24_d22i6"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ld8i4"]
+random_pitch = 1.5
+streams_count = 6
+stream_0/stream = ExtResource("2_87krv")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("3_knw4k")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("4_uw3qt")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("5_0opsc")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("6_yblex")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("7_slp6e")
+stream_5/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_6byjo"]
+random_pitch = 1.1
+streams_count = 8
+stream_0/stream = ExtResource("10_5llrb")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("11_i782l")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("12_553dt")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("13_3i8ld")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("14_77vhm")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("15_651uv")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("16_igt78")
+stream_6/weight = 1.0
+stream_7/stream = ExtResource("17_k2dy7")
+stream_7/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_efuct"]
+random_pitch = 1.1
+streams_count = 7
+stream_0/stream = ExtResource("18_y1kgd")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("19_c1t4v")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("20_k0p40")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("21_11h5k")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("22_wcitd")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("23_n51c7")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("24_d22i6")
+stream_6/weight = 1.0
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_md1gq")
+
+[node name="MobDeathSound" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_ld8i4")
+
+[node name="PlayerDeathSound" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("2_7oes7")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("8_tecvb")
+autoplay = true
+
+[node name="AutoGunShootSound" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_6byjo")
+volume_db = -12.0
+
+[node name="ManualGunShootSound" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_efuct")
+volume_db = -12.0

@@ -1,0 +1,44 @@
+[gd_scene load_steps=11 format=3 uid="uid://bew06lqa0utd5"]
+
+[ext_resource type="Script" path="res://scripts/mob.gd" id="1_yvdbr"]
+[ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="2_ae6t1"]
+[ext_resource type="AudioStream" uid="uid://b0262x30t72wo" path="res://audio/kill.wav" id="3_xhjv3"]
+[ext_resource type="AudioStream" uid="uid://btb216ioip6yt" path="res://audio/kill2.wav" id="4_aif8i"]
+[ext_resource type="AudioStream" uid="uid://c7pg1bcflna7d" path="res://audio/kill3.wav" id="5_kdukf"]
+[ext_resource type="AudioStream" uid="uid://cikqo1oll71tp" path="res://audio/kill4.wav" id="6_0in4w"]
+[ext_resource type="AudioStream" uid="uid://0hjl84p6cgho" path="res://audio/kill5.wav" id="7_atpnl"]
+[ext_resource type="AudioStream" uid="uid://bsbgg5tv07bjn" path="res://audio/kill6.wav" id="8_2atqr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ks51k"]
+radius = 52.0384
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_8uq0k"]
+random_pitch = 1.2
+streams_count = 6
+stream_0/stream = ExtResource("3_xhjv3")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("4_aif8i")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("5_kdukf")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("6_0in4w")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("7_atpnl")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("8_2atqr")
+stream_5/weight = 1.0
+
+[node name="Mob" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_yvdbr")
+
+[node name="Slime" parent="." instance=ExtResource("2_ae6t1")]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -30)
+shape = SubResource("CircleShape2D_ks51k")
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_8uq0k")

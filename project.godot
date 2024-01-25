@@ -74,9 +74,11 @@ Settings/Show_Tooltips=true
 
 [application]
 
-config/name="VampSurv"
+config/name="GoofyBoi : VampSurv"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/image="res://assets/logoTitre.png"
+config/icon="res://assets/logo.png"
 
 [audio]
 
@@ -85,12 +87,16 @@ buses/default_bus_layout=""
 [autoload]
 
 Pause="*res://scenes/pause.tscn"
+AudioManager="*res://scenes/audio_manager.tscn"
+GameOver="*res://scenes/game_over.tscn"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/mode=3
 window/stretch/mode="viewport"
+mouse_cursor/custom_image="res://assets/cursor.png"
 
 [dotnet]
 
@@ -98,7 +104,7 @@ project/assembly_name="Getting started with Godot 4"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/colorpicker_presets/plugin.cfg")
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
 
 [input]
 
