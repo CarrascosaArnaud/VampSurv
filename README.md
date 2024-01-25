@@ -13,6 +13,8 @@
 ## v0.8
 optimiser le code (composition/héritage)
 revoir les arbres
+avoir une difficulté plus progressive avec le temps
+randomiser les messages de fin (rajouter des trucs styles : YOU ARE LEGALLY SKILLED ! à partir de 100 de score)
 baisser le son de mort mobs par rapport aux sons des tirs
 rajouter une barre de pv quand mobs pas full hp
 Gérer le pathing des mobs (rajouter de l'aléatoire et réduire le temps de réaction)
