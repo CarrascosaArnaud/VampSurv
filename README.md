@@ -14,13 +14,13 @@
 optimiser le code (composition/héritage) -> non (peu applicable)
 revoir les arbres -> ok
 avoir une difficulté plus progressive avec le temps -> ok
-randomiser les messages de fin (rajouter des trucs styles : YOU ARE LEGALLY SKILLED ! à partir de 100 de score) -> en cours
+randomiser les messages de fin (rajouter des trucs styles : YOU ARE LEGALLY SKILLED ! à partir de 100 de score) -> ok
 baisser le son de mort mobs par rapport aux sons des tirs -> ok
-rajouter une barre de pv quand mobs pas full hp
-Gérer le pathing des mobs (rajouter de l'aléatoire et réduire le temps de réaction)
+rajouter une barre de pv quand mobs pas full hp -> ok
+fix le bouton "recommencer" -> pas reussi + menfou
 
 ## v0.9
-fix le bouton "recommencer"
+Gérer le pathing des mobs (rajouter de l'aléatoire et réduire le temps de réaction)
 menu (tuto, sons, touches etc)
 différents skins
 rajouter d'autres mobs
