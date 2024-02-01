@@ -19,6 +19,8 @@ func _ready():
 		$Bouboule.scale = Vector2(0.8, 0.8)
 		health = 1
 		speed = 900
+	
+	%HealthBar.max_value = health
 
 func _physics_process(delta):
 	var direction = global_position.direction_to(player.global_position)
@@ -29,6 +31,7 @@ func _physics_process(delta):
 func take_damage():
 	health -= 1
 	%Bouboule.play_hurt()
+	%HealthBar.value = health
 	
 	if health <= 0:
 		AudioManager.mob_death_sound.play()

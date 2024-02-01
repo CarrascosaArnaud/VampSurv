@@ -37,9 +37,9 @@ metadata/_edit_use_anchors_ = true
 [node name="Score" type="Label" parent="ColorRect2"]
 unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
+anchors_preset = -1
+anchor_left = 0.50026
+anchor_right = 0.611719
 offset_left = -340.5
 offset_top = 285.0
 offset_right = 340.5
@@ -47,14 +47,18 @@ offset_bottom = 390.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 76
 text = "Nombre de kills : 0"
+vertical_alignment = 1
+autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
 
 [node name="BestScore" type="Label" parent="ColorRect2"]
 unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
+anchors_preset = -1
+anchor_left = 0.483333
+anchor_top = 0.00648148
+anchor_right = 0.615625
+anchor_bottom = 0.00648148
 offset_left = -308.0
 offset_top = 110.0
 offset_right = 373.0
@@ -62,9 +66,11 @@ offset_bottom = 215.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 76
 text = "Meilleur score : 0"
+vertical_alignment = 1
+autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="StartOver2" type="Button" parent="."]
+[node name="StartOver" type="Button" parent="."]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -79,3 +85,5 @@ grow_vertical = 0
 theme_override_font_sizes/font_size = 100
 text = "Recommencer"
 metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="StartOver" to="." method="_on_start_over_2_pressed"]

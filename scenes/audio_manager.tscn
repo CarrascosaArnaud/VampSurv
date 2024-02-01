@@ -84,6 +84,7 @@ script = ExtResource("1_md1gq")
 
 [node name="MobDeathSound" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamRandomizer_ld8i4")
+volume_db = -18.0
 
 [node name="PlayerDeathSound" type="AudioStreamPlayer" parent="."]
 process_mode = 3
@@ -92,12 +93,11 @@ stream = ExtResource("2_7oes7")
 [node name="Music" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 stream = ExtResource("8_tecvb")
-autoplay = true
 
 [node name="AutoGunShootSound" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamRandomizer_6byjo")
-volume_db = -12.0
+volume_db = -15.0
 
 [node name="ManualGunShootSound" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamRandomizer_efuct")
-volume_db = -12.0
+volume_db = -14.0

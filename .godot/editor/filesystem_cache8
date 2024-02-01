@@ -1,128 +1,138 @@
 6dcd580d9bf2a9dbe66cc9f994d3620b
-::res://::1706181874
-README.md::TextFile::-1::1705680210::0::1::::<><>::
-::res://addons/::1706132141
-::res://addons/AsepriteWizard/::1706132141
-plugin.cfg::TextFile::-1::1706132141::0::1::::<><>::
-plugin.gd::GDScript::-1::1706132141::0::1::::<>EditorPlugin<>::
-::res://addons/AsepriteWizard/aseprite/::1706132141
-aseprite.gd::GDScript::-1::1706132141::0::1::::<>RefCounted<>::
-file_exporter.gd::GDScript::-1::1706132141::0::1::::<>RefCounted<>::
-::res://addons/AsepriteWizard/config/::1706132141
-config.gd::GDScript::-1::1706132141::0::1::::<>RefCounted<>::
-config_dialog.gd::GDScript::-1::1706132141::0::1::::<>PopupPanel<>::
-config_dialog.tscn::PackedScene::8959845410224223728::1706132141::0::1::::<><>::res://addons/AsepriteWizard/config/config_dialog.gd
-result_codes.gd::GDScript::-1::1706132141::0::1::::<>RefCounted<>::
-wizard_config.gd::GDScript::-1::1706132141::0::1::::<>RefCounted<>::
-::res://addons/AsepriteWizard/creators/::1706132141
-base_sprite_resource_creator.gd::GDScript::-1::1706132141::0::1::::<>RefCounted<>::
-::res://addons/AsepriteWizard/creators/animation_player/::1706132141
-animation_creator.gd::GDScript::-1::1706132141::0::1::::<><>::
-sprite_animation_creator.gd::GDScript::-1::1706132141::0::1::::<><>::
-texture_rect_animation_creator.gd::GDScript::-1::1706132141::0::1::::<><>::
-::res://addons/AsepriteWizard/creators/sprite_frames/::1706132141
-sprite_frames_creator.gd::GDScript::-1::1706132141::0::1::::<><>::
-::res://addons/AsepriteWizard/export/::1706132141
-metadata_export_plugin.gd::GDScript::-1::1706132141::0::1::::<>EditorExportPlugin<>::
-::res://addons/AsepriteWizard/importers/::1706132141
-noop_import_plugin.gd::GDScript::-1::1706132141::0::1::::<>EditorImportPlugin<>::
-sprite_frames_import_plugin.gd::GDScript::-1::1706132141::0::1::::<>EditorImportPlugin<>::
-static_texture_import_plugin.gd::GDScript::-1::1706132141::0::1::::<>EditorImportPlugin<>::
-tileset_texture_import_plugin.gd::GDScript::-1::1706132141::0::1::::<>EditorImportPlugin<>::
-::res://addons/AsepriteWizard/interface/::1706132141
-::res://addons/AsepriteWizard/interface/docks/::1706132141
-::res://addons/AsepriteWizard/interface/docks/animated_sprite/::1706132141
-animated_sprite_inspector_dock.gd::GDScript::-1::1706132141::0::1::::<>PanelContainer<>::
-animated_sprite_inspector_dock.tscn::PackedScene::1482828111488489973::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/animated_sprite/animated_sprite_inspector_dock.gd<>uid://dj1uo3blocr8e::::res://addons/AsepriteWizard/interface/shared/source_drop_button.tscn<>uid://cwvgnm3o7eed2::::res://addons/AsepriteWizard/interface/shared/dir_drop_button.tscn
-inspector_plugin.gd::GDScript::-1::1706132141::0::1::::<>EditorInspectorPlugin<>::
-::res://addons/AsepriteWizard/interface/docks/sprite/::1706132141
-animation_player_inspector_dock.gd::GDScript::-1::1706132141::0::1::::<>PanelContainer<>::
-animation_player_inspector_dock.tscn::PackedScene::2998581922542402478::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/sprite/animation_player_inspector_dock.gd<>uid://x1f1t87m582u::::res://addons/AsepriteWizard/interface/shared/animation_player_drop_button.tscn<>uid://dj1uo3blocr8e::::res://addons/AsepriteWizard/interface/shared/source_drop_button.tscn<>uid://cwvgnm3o7eed2::::res://addons/AsepriteWizard/interface/shared/dir_drop_button.tscn
-inspector_plugin.gd::GDScript::-1::1706132141::0::1::::<>EditorInspectorPlugin<>::
-::res://addons/AsepriteWizard/interface/docks/wizard/::1706132141
-as_wizard_dock_container.gd::GDScript::-1::1706132141::0::1::::<>TabContainer<>::
-as_wizard_dock_container.tscn::PackedScene::-1::1706132141::0::1::::<><>::uid://c5dwobjd34w3p::::res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_window.tscn<>res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_dock_container.gd<>uid://cyoin5ncul0fm::::res://addons/AsepriteWizard/interface/docks/wizard/sprite_frames_import_history.tscn
-as_wizard_window.gd::GDScript::-1::1706132141::0::1::::<>PanelContainer<>::
-as_wizard_window.tscn::PackedScene::6886060651346363495::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_window.gd
-sprite_frames_import_history.gd::GDScript::-1::1706132141::0::1::::<>PanelContainer<>::
-sprite_frames_import_history.tscn::PackedScene::6486785450419732274::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/sprite_frames_import_history.gd
-::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/::1706132141
-import_date.gd::GDScript::-1::1706132141::0::1::::<>Label<>::
-import_date.tscn::PackedScene::-1::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/import_date.gd
-list_actions.gd::GDScript::-1::1706132141::0::1::::<>HBoxContainer<>::
-list_actions.tscn::PackedScene::-1::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/list_actions.gd
-output_path.tscn::PackedScene::-1::1706132141::0::1::::<><>::
-source_path.gd::GDScript::-1::1706132141::0::1::::<>LineEdit<>::
-source_path.tscn::PackedScene::-1::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/source_path.gd
-::res://addons/AsepriteWizard/interface/shared/::1706132141
-animation_player_drop_button.gd::GDScript::-1::1706132141::0::1::::<>Button<>::
-animation_player_drop_button.tscn::PackedScene::1668368291279044894::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/animation_player_drop_button.gd
-dir_drop_button.gd::GDScript::-1::1706132141::0::1::::<>Button<>::
-dir_drop_button.tscn::PackedScene::6360736051749278321::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/dir_drop_button.gd
-source_drop_button.gd::GDScript::-1::1706132141::0::1::::<>Button<>::
-source_drop_button.tscn::PackedScene::7845876279114352826::1706132141::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/source_drop_button.gd
-::res://assets/::1706182102
-bullet.png::CompressedTexture2D::2143564953718565232::1706177577::1706181133::1::::<><>::
-cursor.png::CompressedTexture2D::7452421334372529819::1706182094::1706182104::1::::<><>::
-gun.png::CompressedTexture2D::5053740603079991488::1706177009::1706181133::1::::<><>::
-logo.png::CompressedTexture2D::7103178708033619059::1706181655::1706181800::1::::<><>::
-logoTitre.png::CompressedTexture2D::4376938082997708032::1706181757::1706181800::1::::<><>::
-muzzleFlash.png::CompressedTexture2D::8201640083673100415::1706177887::1706181133::1::::<><>::
-player.png::CompressedTexture2D::2405812829956430895::1706133757::1706181125::1::::<><>::
-slime.png::CompressedTexture2D::31978592358271554::1706176076::1706181125::1::::<><>::
-smokeExplosion.png::CompressedTexture2D::3055758777156100105::1706180404::1706181139::1::::<><>::
-tree.png::CompressedTexture2D::7191341768796037762::1706178981::1706181142::1::::<><>::
-::res://audio/::1705846729
-dead.wav::AudioStreamWAV::8269350006243168998::1705830172::1705830179::1::::<><>::
-kill2.wav::AudioStreamWAV::3723760521245700599::1705830172::1705830179::1::::<><>::
-kill3.wav::AudioStreamWAV::7050260818567608955::1705830172::1705830179::1::::<><>::
-kill4.wav::AudioStreamWAV::5355993754780134285::1705830172::1705830179::1::::<><>::
-kill5.wav::AudioStreamWAV::1769739610690006452::1705830172::1705830179::1::::<><>::
-kill6.wav::AudioStreamWAV::3652260869692371635::1705830172::1705830179::1::::<><>::
-kill.wav::AudioStreamWAV::4198811669668859830::1705830172::1705830179::1::::<><>::
-laserShoot (1).wav::AudioStreamWAV::1821972970651965600::1705830172::1705830179::1::::<><>::
-laserShoot (2).wav::AudioStreamWAV::6321680712946946875::1705830172::1705830179::1::::<><>::
-laserShoot (3).wav::AudioStreamWAV::6494793256831696184::1705830172::1705830179::1::::<><>::
-laserShoot (4).wav::AudioStreamWAV::9118830660824756857::1705830172::1705830179::1::::<><>::
-laserShoot (5).wav::AudioStreamWAV::341838919950453760::1705830172::1705830179::1::::<><>::
-laserShoot (6).wav::AudioStreamWAV::8324697861089969334::1705830172::1705830179::1::::<><>::
-laserShoot (7).wav::AudioStreamWAV::26731073567926826::1705830172::1705830179::1::::<><>::
-laserShoot (8).wav::AudioStreamWAV::5236745460144641238::1705830172::1705830179::1::::<><>::
-laserShoot (9).wav::AudioStreamWAV::5767508943828831777::1705830172::1705830179::1::::<><>::
-laserShoot (10).wav::AudioStreamWAV::6812022284646073407::1705830172::1705830179::1::::<><>::
-laserShoot (11).wav::AudioStreamWAV::4745302180907590841::1705830172::1705830179::1::::<><>::
-laserShoot (12).wav::AudioStreamWAV::3528213680483765672::1705830172::1705830179::1::::<><>::
-laserShoot (13).wav::AudioStreamWAV::5002111302412931240::1705830172::1705830179::1::::<><>::
-laserShoot (14).wav::AudioStreamWAV::3073825182244678440::1705830172::1705830179::1::::<><>::
-laserShoot.wav::AudioStreamWAV::8246493796182245138::1705830172::1705830179::1::::<><>::
-moonKidBO.mp3::AudioStreamMP3::644200584855015034::1705846616::1705846729::1::::<><>::
-::res://scenes/::1706181969
-audio_manager.tscn::PackedScene::2332976088577587926::1706181968::0::1::::<><>::res://scripts/audioManager.gd<>uid://dp2y8sk4q4mi5::::res://audio/dead.wav<>uid://b0262x30t72wo::::res://audio/kill.wav<>uid://btb216ioip6yt::::res://audio/kill2.wav<>uid://c7pg1bcflna7d::::res://audio/kill3.wav<>uid://cikqo1oll71tp::::res://audio/kill4.wav<>uid://0hjl84p6cgho::::res://audio/kill5.wav<>uid://bsbgg5tv07bjn::::res://audio/kill6.wav<>uid://jgb5ijpffa8a::::res://audio/moonKidBO.mp3<>uid://dpqwsvqn31wpm::::res://audio/laserShoot.wav<>uid://07tvmx18odl5::::res://audio/laserShoot (1).wav<>uid://cwcjfmlspof7h::::res://audio/laserShoot (2).wav<>uid://cysekchrmtir5::::res://audio/laserShoot (3).wav<>uid://d26h2q4m407a8::::res://audio/laserShoot (4).wav<>uid://e4ubi36xukg3::::res://audio/laserShoot (5).wav<>uid://dquss7qye0mws::::res://audio/laserShoot (6).wav<>uid://m7iy7i6j5o5::::res://audio/laserShoot (7).wav<>uid://cguyoyedx8wbe::::res://audio/laserShoot (8).wav<>uid://cof3baj2n4cyr::::res://audio/laserShoot (9).wav<>uid://c4b2anu78m34f::::res://audio/laserShoot (10).wav<>uid://b8uwo0jc8su3r::::res://audio/laserShoot (11).wav<>uid://bqjdftnsc4vci::::res://audio/laserShoot (12).wav<>uid://cdjcbo64j4uaa::::res://audio/laserShoot (13).wav<>uid://bj18pmebvydky::::res://audio/laserShoot (14).wav
-autoGun.tscn::PackedScene::7589521588929433930::1706181968::0::1::::<><>::res://scripts/autoGun.gd<>uid://ceacms82c0ha3::::res://assets/gun.png
-bouboule.tscn::PackedScene::5028954770967083708::1706181968::0::1::::<><>::res://scripts/bouboule.gd<>uid://pqxhitntruo::::res://assets/slime.png
-bullet.tscn::PackedScene::3758824436789659047::1706181969::0::1::::<><>::res://scripts/bullet.gd<>uid://5smg4cbl0iyi::::res://assets/bullet.png
-game.tscn::PackedScene::2166370235697801611::1706181968::0::1::::<><>::res://scripts/game.gd<>uid://dpp1140due25a::::res://scenes/player.tscn<>uid://ibl1jubdl1an::::res://scenes/map.tscn<>uid://clrervo6ig63f::::res://scenes/game_over.tscn
-game_over.tscn::PackedScene::5580287421728099913::1706181968::0::1::::<><>::res://scripts/game_over.gd
-goofyboi.tscn::PackedScene::949000287001420565::1706181968::0::1::::<><>::res://scripts/goofyboi.gd<>uid://bajnneadph7e6::::res://assets/player.png
-manualGun.tscn::PackedScene::390874019170887660::1706181968::0::1::::<><>::res://scripts/manualGun.gd<>uid://ceacms82c0ha3::::res://assets/gun.png
-map.tscn::PackedScene::564289948076423709::1706181969::0::1::::<><>::uid://d01wiid7ug8gk::::res://scenes/tree.tscn
-mob.tscn::PackedScene::2714166255772697856::1706181968::0::1::::<><>::res://scripts/mob.gd<>uid://cdwcfd15sinom::::res://scenes/bouboule.tscn
-muzzle_flash.tscn::PackedScene::6601472980654318439::1706181969::0::1::::<><>::res://scripts/muzzle_flash.gd<>uid://do362w4wr4ig2::::res://assets/muzzleFlash.png
-pause.tscn::PackedScene::2440107748261449165::1705677809::0::1::::<><>::res://scripts/pause.gd
-player.tscn::PackedScene::8244687006374627944::1706181968::0::1::::<><>::res://scripts/player.gd<>uid://nrx5p4m6y3m4::::res://scenes/goofyboi.tscn<>uid://dgeokumduf3ek::::res://scenes/autoGun.tscn<>uid://ftlvxrq1shr5::::res://scenes/manualGun.tscn
-smoke_explosion.tscn::PackedScene::7675803860678853612::1706181969::0::1::::<><>::res://scripts/smoke_explosion.gd<>uid://bjsh5vdqv8w2d::::res://assets/smokeExplosion.png
-tree.tscn::PackedScene::8969007450129917194::1706181969::0::1::::<><>::uid://dapsl3uftp8fm::::res://assets/tree.png
-::res://scripts/::1706181036
-audioManager.gd::GDScript::-1::1706131890::0::1::::<>Node<>::
-autoGun.gd::GDScript::-1::1706181029::0::1::::<>Area2D<>::
-bouboule.gd::GDScript::-1::1706173072::0::1::::<>Node2D<>::
-bullet.gd::GDScript::-1::1705677374::0::1::::<>Area2D<>::
-game.gd::GDScript::-1::1706174429::0::1::::<>Node2D<>::
-game_over.gd::GDScript::-1::1706175488::0::1::::<>CanvasLayer<>::
-goofyboi.gd::GDScript::-1::1706134749::0::1::::<>Node2D<>::
-manualGun.gd::GDScript::-1::1706181036::0::1::::<>Area2D<>::
-mob.gd::GDScript::-1::1706180924::0::1::::<>CharacterBody2D<>::
-muzzle_flash.gd::GDScript::-1::1695664579::0::1::::<>Node2D<>::
-pause.gd::GDScript::-1::1706106587::0::1::::<>CanvasLayer<>::
-player.gd::GDScript::-1::1706170562::0::1::::<>CharacterBody2D<>::
-smoke_explosion.gd::GDScript::-1::1706180655::0::1::::<>Node2D<>::
+::res://::1706795019
+README.md::TextFile::-1::1706518239::0::1::::<><>::
+::res://addons/::1706518239
+::res://addons/AsepriteWizard/::1706518239
+plugin.cfg::TextFile::-1::1706518239::0::1::::<><>::
+plugin.gd::GDScript::-1::1706518239::0::1::::<>EditorPlugin<>::
+::res://addons/AsepriteWizard/aseprite/::1706518239
+aseprite.gd::GDScript::-1::1706518239::0::1::::<>RefCounted<>::
+file_exporter.gd::GDScript::-1::1706518239::0::1::::<>RefCounted<>::
+::res://addons/AsepriteWizard/config/::1706518239
+config.gd::GDScript::-1::1706518239::0::1::::<>RefCounted<>::
+config_dialog.gd::GDScript::-1::1706518239::0::1::::<>PopupPanel<>::
+config_dialog.tscn::PackedScene::8959845410224223728::1706518239::0::1::::<><>::res://addons/AsepriteWizard/config/config_dialog.gd
+result_codes.gd::GDScript::-1::1706518239::0::1::::<>RefCounted<>::
+wizard_config.gd::GDScript::-1::1706518239::0::1::::<>RefCounted<>::
+::res://addons/AsepriteWizard/creators/::1706518239
+base_sprite_resource_creator.gd::GDScript::-1::1706518239::0::1::::<>RefCounted<>::
+::res://addons/AsepriteWizard/creators/animation_player/::1706518239
+animation_creator.gd::GDScript::-1::1706518239::0::1::::<><>::
+sprite_animation_creator.gd::GDScript::-1::1706518239::0::1::::<><>::
+texture_rect_animation_creator.gd::GDScript::-1::1706518239::0::1::::<><>::
+::res://addons/AsepriteWizard/creators/sprite_frames/::1706518239
+sprite_frames_creator.gd::GDScript::-1::1706518239::0::1::::<><>::
+::res://addons/AsepriteWizard/export/::1706518239
+metadata_export_plugin.gd::GDScript::-1::1706518239::0::1::::<>EditorExportPlugin<>::
+::res://addons/AsepriteWizard/importers/::1706518239
+noop_import_plugin.gd::GDScript::-1::1706518239::0::1::::<>EditorImportPlugin<>::
+sprite_frames_import_plugin.gd::GDScript::-1::1706518239::0::1::::<>EditorImportPlugin<>::
+static_texture_import_plugin.gd::GDScript::-1::1706518239::0::1::::<>EditorImportPlugin<>::
+tileset_texture_import_plugin.gd::GDScript::-1::1706518239::0::1::::<>EditorImportPlugin<>::
+::res://addons/AsepriteWizard/interface/::1706518239
+::res://addons/AsepriteWizard/interface/docks/::1706518239
+::res://addons/AsepriteWizard/interface/docks/animated_sprite/::1706518239
+animated_sprite_inspector_dock.gd::GDScript::-1::1706518239::0::1::::<>PanelContainer<>::
+animated_sprite_inspector_dock.tscn::PackedScene::1482828111488489973::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/animated_sprite/animated_sprite_inspector_dock.gd<>uid://dj1uo3blocr8e::::res://addons/AsepriteWizard/interface/shared/source_drop_button.tscn<>uid://cwvgnm3o7eed2::::res://addons/AsepriteWizard/interface/shared/dir_drop_button.tscn
+inspector_plugin.gd::GDScript::-1::1706518239::0::1::::<>EditorInspectorPlugin<>::
+::res://addons/AsepriteWizard/interface/docks/sprite/::1706518239
+animation_player_inspector_dock.gd::GDScript::-1::1706518239::0::1::::<>PanelContainer<>::
+animation_player_inspector_dock.tscn::PackedScene::2998581922542402478::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/sprite/animation_player_inspector_dock.gd<>uid://x1f1t87m582u::::res://addons/AsepriteWizard/interface/shared/animation_player_drop_button.tscn<>uid://dj1uo3blocr8e::::res://addons/AsepriteWizard/interface/shared/source_drop_button.tscn<>uid://cwvgnm3o7eed2::::res://addons/AsepriteWizard/interface/shared/dir_drop_button.tscn
+inspector_plugin.gd::GDScript::-1::1706518239::0::1::::<>EditorInspectorPlugin<>::
+::res://addons/AsepriteWizard/interface/docks/wizard/::1706518239
+as_wizard_dock_container.gd::GDScript::-1::1706518239::0::1::::<>TabContainer<>::
+as_wizard_dock_container.tscn::PackedScene::-1::1706518239::0::1::::<><>::uid://c5dwobjd34w3p::::res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_window.tscn<>res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_dock_container.gd<>uid://cyoin5ncul0fm::::res://addons/AsepriteWizard/interface/docks/wizard/sprite_frames_import_history.tscn
+as_wizard_window.gd::GDScript::-1::1706518239::0::1::::<>PanelContainer<>::
+as_wizard_window.tscn::PackedScene::6886060651346363495::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_window.gd
+sprite_frames_import_history.gd::GDScript::-1::1706518239::0::1::::<>PanelContainer<>::
+sprite_frames_import_history.tscn::PackedScene::6486785450419732274::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/sprite_frames_import_history.gd
+::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/::1706518239
+import_date.gd::GDScript::-1::1706518239::0::1::::<>Label<>::
+import_date.tscn::PackedScene::-1::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/import_date.gd
+list_actions.gd::GDScript::-1::1706518239::0::1::::<>HBoxContainer<>::
+list_actions.tscn::PackedScene::-1::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/list_actions.gd
+output_path.tscn::PackedScene::-1::1706518239::0::1::::<><>::
+source_path.gd::GDScript::-1::1706518239::0::1::::<>LineEdit<>::
+source_path.tscn::PackedScene::-1::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/source_path.gd
+::res://addons/AsepriteWizard/interface/shared/::1706518239
+animation_player_drop_button.gd::GDScript::-1::1706518239::0::1::::<>Button<>::
+animation_player_drop_button.tscn::PackedScene::1668368291279044894::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/animation_player_drop_button.gd
+dir_drop_button.gd::GDScript::-1::1706518239::0::1::::<>Button<>::
+dir_drop_button.tscn::PackedScene::6360736051749278321::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/dir_drop_button.gd
+source_drop_button.gd::GDScript::-1::1706518239::0::1::::<>Button<>::
+source_drop_button.tscn::PackedScene::7845876279114352826::1706518239::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/source_drop_button.gd
+::res://assets/::1706780236
+bullet.png::CompressedTexture2D::2143564953718565232::1706518239::1706518239::1::::<><>::
+cursor.png::CompressedTexture2D::7452421334372529819::1706518239::1706518239::1::::<><>::
+gun.png::CompressedTexture2D::5053740603079991488::1706518239::1706518239::1::::<><>::
+logo.png::CompressedTexture2D::7103178708033619059::1706518239::1706518239::1::::<><>::
+logoTitre.png::CompressedTexture2D::4376938082997708032::1706518239::1706518239::1::::<><>::
+muzzleFlash.png::CompressedTexture2D::8201640083673100415::1706518239::1706518239::1::::<><>::
+player.png::CompressedTexture2D::2405812829956430895::1706518239::1706518239::1::::<><>::
+slime.png::CompressedTexture2D::31978592358271554::1706518239::1706518239::1::::<><>::
+smokeExplosion.png::CompressedTexture2D::3055758777156100105::1706518239::1706518239::1::::<><>::
+tree1.png::CompressedTexture2D::7191341768796037762::1706518239::1706780236::1::::<><>::
+tree2.png::CompressedTexture2D::6488451298683773480::1706780223::1706780228::1::::<><>::
+tree3.png::CompressedTexture2D::5868831353537574131::1706780223::1706780228::1::::<><>::
+::res://audio/::1706518239
+dead.wav::AudioStreamWAV::8269350006243168998::1706518239::1706518239::1::::<><>::
+kill2.wav::AudioStreamWAV::3723760521245700599::1706518239::1706518239::1::::<><>::
+kill3.wav::AudioStreamWAV::7050260818567608955::1706518239::1706518239::1::::<><>::
+kill4.wav::AudioStreamWAV::5355993754780134285::1706518239::1706518239::1::::<><>::
+kill5.wav::AudioStreamWAV::1769739610690006452::1706518239::1706518239::1::::<><>::
+kill6.wav::AudioStreamWAV::3652260869692371635::1706518239::1706518239::1::::<><>::
+kill.wav::AudioStreamWAV::4198811669668859830::1706518239::1706518239::1::::<><>::
+laserShoot (1).wav::AudioStreamWAV::1821972970651965600::1706518239::1706518239::1::::<><>::
+laserShoot (2).wav::AudioStreamWAV::6321680712946946875::1706518239::1706518239::1::::<><>::
+laserShoot (3).wav::AudioStreamWAV::6494793256831696184::1706518239::1706518239::1::::<><>::
+laserShoot (4).wav::AudioStreamWAV::9118830660824756857::1706518239::1706518239::1::::<><>::
+laserShoot (5).wav::AudioStreamWAV::341838919950453760::1706518239::1706518239::1::::<><>::
+laserShoot (6).wav::AudioStreamWAV::8324697861089969334::1706518239::1706518239::1::::<><>::
+laserShoot (7).wav::AudioStreamWAV::26731073567926826::1706518239::1706518239::1::::<><>::
+laserShoot (8).wav::AudioStreamWAV::5236745460144641238::1706518239::1706518239::1::::<><>::
+laserShoot (9).wav::AudioStreamWAV::5767508943828831777::1706518239::1706518239::1::::<><>::
+laserShoot (10).wav::AudioStreamWAV::6812022284646073407::1706518239::1706518239::1::::<><>::
+laserShoot (11).wav::AudioStreamWAV::4745302180907590841::1706518239::1706518239::1::::<><>::
+laserShoot (12).wav::AudioStreamWAV::3528213680483765672::1706518239::1706518239::1::::<><>::
+laserShoot (13).wav::AudioStreamWAV::5002111302412931240::1706518239::1706518239::1::::<><>::
+laserShoot (14).wav::AudioStreamWAV::3073825182244678440::1706518239::1706518239::1::::<><>::
+laserShoot.wav::AudioStreamWAV::8246493796182245138::1706518239::1706518239::1::::<><>::
+moonKidBO.mp3::AudioStreamMP3::644200584855015034::1706518239::1706518239::1::::<><>::
+::res://scenes/::1706794218
+audio_manager.tscn::PackedScene::2332976088577587926::1706794150::0::1::::<><>::res://scripts/audioManager.gd<>uid://dp2y8sk4q4mi5::::res://audio/dead.wav<>uid://b0262x30t72wo::::res://audio/kill.wav<>uid://btb216ioip6yt::::res://audio/kill2.wav<>uid://c7pg1bcflna7d::::res://audio/kill3.wav<>uid://cikqo1oll71tp::::res://audio/kill4.wav<>uid://0hjl84p6cgho::::res://audio/kill5.wav<>uid://bsbgg5tv07bjn::::res://audio/kill6.wav<>uid://jgb5ijpffa8a::::res://audio/moonKidBO.mp3<>uid://dpqwsvqn31wpm::::res://audio/laserShoot.wav<>uid://07tvmx18odl5::::res://audio/laserShoot (1).wav<>uid://cwcjfmlspof7h::::res://audio/laserShoot (2).wav<>uid://cysekchrmtir5::::res://audio/laserShoot (3).wav<>uid://d26h2q4m407a8::::res://audio/laserShoot (4).wav<>uid://e4ubi36xukg3::::res://audio/laserShoot (5).wav<>uid://dquss7qye0mws::::res://audio/laserShoot (6).wav<>uid://m7iy7i6j5o5::::res://audio/laserShoot (7).wav<>uid://cguyoyedx8wbe::::res://audio/laserShoot (8).wav<>uid://cof3baj2n4cyr::::res://audio/laserShoot (9).wav<>uid://c4b2anu78m34f::::res://audio/laserShoot (10).wav<>uid://b8uwo0jc8su3r::::res://audio/laserShoot (11).wav<>uid://bqjdftnsc4vci::::res://audio/laserShoot (12).wav<>uid://cdjcbo64j4uaa::::res://audio/laserShoot (13).wav<>uid://bj18pmebvydky::::res://audio/laserShoot (14).wav
+autoGun.tscn::PackedScene::7589521588929433930::1706519595::0::1::::<><>::res://scripts/autoGun.gd<>uid://ceacms82c0ha3::::res://assets/gun.png
+bouboule.tscn::PackedScene::5028954770967083708::1706519595::0::1::::<><>::res://scripts/bouboule.gd<>uid://pqxhitntruo::::res://assets/slime.png
+bullet.tscn::PackedScene::3758824436789659047::1706519595::0::1::::<><>::res://scripts/bullet.gd<>uid://5smg4cbl0iyi::::res://assets/bullet.png
+game.tscn::PackedScene::2166370235697801611::1706794151::0::1::::<><>::res://scripts/game.gd<>uid://dpp1140due25a::::res://scenes/player.tscn<>uid://ibl1jubdl1an::::res://scenes/map.tscn<>uid://clrervo6ig63f::::res://scenes/game_over.tscn
+game_over.tscn::PackedScene::5580287421728099913::1706794218::0::1::::<><>::res://scripts/game_over.gd
+goofyboi.tscn::PackedScene::949000287001420565::1706519595::0::1::::<><>::res://scripts/goofyboi.gd<>uid://bajnneadph7e6::::res://assets/player.png
+manualGun.tscn::PackedScene::390874019170887660::1706519595::0::1::::<><>::res://scripts/manualGun.gd<>uid://ceacms82c0ha3::::res://assets/gun.png
+map.tscn::PackedScene::564289948076423709::1706794151::0::1::::<><>::uid://d01wiid7ug8gk::::res://scenes/tree.tscn
+mob.tscn::PackedScene::2714166255772697856::1706794150::0::1::::<><>::res://scripts/mob.gd<>uid://cdwcfd15sinom::::res://scenes/bouboule.tscn
+muzzle_flash.tscn::PackedScene::6601472980654318439::1706519595::0::1::::<><>::res://scripts/muzzle_flash.gd<>uid://do362w4wr4ig2::::res://assets/muzzleFlash.png
+pause.tscn::PackedScene::2440107748261449165::1706518239::0::1::::<><>::res://scripts/pause.gd
+player.tscn::PackedScene::8244687006374627944::1706794150::0::1::::<><>::res://scripts/player.gd<>uid://nrx5p4m6y3m4::::res://scenes/goofyboi.tscn<>uid://dgeokumduf3ek::::res://scenes/autoGun.tscn<>uid://ftlvxrq1shr5::::res://scenes/manualGun.tscn
+smoke_explosion.tscn::PackedScene::7675803860678853612::1706525304::0::1::::<><>::res://scripts/smoke_explosion.gd<>uid://bjsh5vdqv8w2d::::res://assets/smokeExplosion.png
+tree.gd::GDScript::-1::1706793533::0::1::::<>StaticBody2D<>::
+tree.tscn::PackedScene::8969007450129917194::1706794151::0::1::::<><>::res://scenes/tree.gd<>uid://dapsl3uftp8fm::::res://assets/tree1.png
+::res://scripts/::1706794218
+audioManager.gd::GDScript::-1::1706518239::0::1::::<>Node<>::
+autoGun.gd::GDScript::-1::1706518239::0::1::::<>Area2D<>::
+bouboule.gd::GDScript::-1::1706518239::0::1::::<>Node2D<>::
+bullet.gd::GDScript::-1::1706518239::0::1::::<>Area2D<>::
+game.gd::GDScript::-1::1706788453::0::1::::<>Node2D<>::
+game_over.gd::GDScript::-1::1706794218::0::1::::<>CanvasLayer<>::
+goofyboi.gd::GDScript::-1::1706518239::0::1::::<>Node2D<>::
+manualGun.gd::GDScript::-1::1706518239::0::1::::<>Area2D<>::
+mob.gd::GDScript::-1::1706518239::0::1::::<>CharacterBody2D<>::
+muzzle_flash.gd::GDScript::-1::1706518239::0::1::::<>Node2D<>::
+pause.gd::GDScript::-1::1706518239::0::1::::<>CanvasLayer<>::
+player.gd::GDScript::-1::1706793560::0::1::::<>CharacterBody2D<>::
+smoke_explosion.gd::GDScript::-1::1706518239::0::1::::<>Node2D<>::
+::res://tools/::1706786904
+AttackComponent.gd::GDScript::-1::1706526994::0::1::::Attack<>RefCounted<>::
+AttackComponent.tscn::PackedScene::5351464181600742779::1706781282::0::1::::<><>::res://tools/AttackComponent.gd
+HealthComponent.gd::GDScript::-1::1706527096::0::1::::HealthComponent<>Node2D<>::
+HealthComponent.tscn::PackedScene::8870597877201706767::1706781282::0::1::::<><>::res://tools/HealthComponent.gd
+HitboxComponent.gd::GDScript::-1::1706786904::0::1::::HitboxComponent<>Area2D<>::
+HitboxComponent.tscn::PackedScene::9162348410817857967::1706781282::0::1::::<><>::res://tools/HitboxComponent.gd
