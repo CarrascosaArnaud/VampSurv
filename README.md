@@ -11,7 +11,7 @@
 
 # Patchnotes prévus : 
 ## v0.9
-Gérer le pathing des mobs (rajouter de l'aléatoire et réduire le temps de réaction)
+Gérer le pathing des mobs (rajouter de l'aléatoire et réduire le temps de réaction) -> flemme + j'estime que dans un vamp surv faut que ce soit direct, mais sympa pour un prochain projet
 menu (tuto, sons, touches etc)
 différents skins
 rajouter d'autres mobs
