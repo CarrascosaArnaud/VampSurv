@@ -3,7 +3,7 @@ extends CanvasLayer
 @onready var score = 0
 @onready var bestScore = 0
 
-func randomText():
+func randomText() : 
 	var random = randi_range(1,6)
 	if (random == 1):
 		return ("Bien tenté...")
@@ -47,15 +47,14 @@ func randomTextBetterScore():
 func gameOver():
 	AudioManager.music.set_volume_db(-15) 
 	self.visible = true
-	
 	if GameOver.bestScore < GameOver.score:
 		GameOver.bestScore = GameOver.score
-		if (GameOver.score >= 50) :
-			%GameOverText.text = randomTextBetterScore()
-		else:
-			%GameOverText.text = randomTextScore()
-	
-	%GameOverText.text = randomText()
+	if (GameOver.score >= 0 && GameOver.score <= 50) :
+		%GameOverText.text = randomText()
+	elif (GameOver.score >= 51 && GameOver.score <= 100):
+		%GameOverText.text = randomTextScore()
+	elif (GameOver.score >= 101 && GameOver.score <= 200):
+		%GameOverText.text = randomTextBetterScore()
 	%Score.text = str("Nombre de kills : " , GameOver.score);
 	%BestScore.text = str("Meilleur score : " , GameOver.bestScore);
 	#$ColorRect2/LiveTimer.text = str("Temps en vie : ", round(Game.liveTimer), " s");

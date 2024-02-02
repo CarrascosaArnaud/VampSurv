@@ -2,7 +2,7 @@ extends Area2D
 
 @onready var PRECISION = 10 + (GameOver.score*2) #Plus proche de 0 = mieux
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var enemies_in_range = get_overlapping_bodies()
 	if enemies_in_range.size() > 0:
 		var target_enemy = enemies_in_range.front() # same as enemies_in_range[0]
@@ -23,5 +23,5 @@ func shoot():
 func _on_timer_timeout():
 	shoot()
 	
-	for i in range(min((GameOver.score/5),5)):
+	for i in range(min(round(GameOver.score/10),5)):
 		shoot()

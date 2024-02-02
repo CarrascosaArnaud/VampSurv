@@ -7,6 +7,7 @@ var speed = 750.0
 @onready var player = get_node("/root/Game/Player")
 
 func _ready():
+	%HealthBar.visible = false
 	%Bouboule.play_walk()
 	if(randomGen == 1):
 		$Bouboule.modulate = Color.from_hsv(1,0.8,0.8,0.8)
@@ -22,13 +23,14 @@ func _ready():
 	
 	%HealthBar.max_value = health
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction = global_position.direction_to(player.global_position)
 	velocity = direction * speed
 	move_and_slide()
 
 
 func take_damage():
+	%HealthBar.visible = true
 	health -= 1
 	%Bouboule.play_hurt()
 	%HealthBar.value = health

@@ -30,6 +30,15 @@ unique_name_in_owner = true
 position = Vector2(-43.942, -81.7974)
 rotation = 0.00561791
 
+[node name="Score" type="Label" parent="Player"]
+unique_name_in_owner = true
+offset_left = 728.0
+offset_top = -535.0
+offset_right = 943.0
+offset_bottom = -458.0
+theme_override_font_sizes/font_size = 41
+text = "Score : 0"
+
 [node name="SpawnTimer" type="Timer" parent="."]
 wait_time = 0.6
 autostart = true

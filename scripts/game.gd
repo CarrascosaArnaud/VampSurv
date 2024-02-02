@@ -18,6 +18,8 @@ func _physics_process(delta):
 		$SpawnTimer.wait_time = 0.45
 	elif(liveTimer >= 10.0 && maxTimer):
 		$SpawnTimer.wait_time = 0.50
+	
+	%Score.text = str("Score : " , GameOver.score)
 
 func spawn_mob():
 	var new_mob = preload("res://scenes/mob.tscn").instantiate()

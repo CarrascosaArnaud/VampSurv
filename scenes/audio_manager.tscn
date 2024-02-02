@@ -93,6 +93,7 @@ stream = ExtResource("2_7oes7")
 [node name="Music" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 stream = ExtResource("8_tecvb")
+autoplay = true
 
 [node name="AutoGunShootSound" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamRandomizer_6byjo")
